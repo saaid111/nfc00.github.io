@@ -1,4 +1,5 @@
 let count = 0;
+let timeoutId;
 async function readTag() {
 
     if ("NDEFReader" in window) {
@@ -30,7 +31,7 @@ async function readTag() {
       consoleLog("NFC is not supported. But You Can Check Your Progress!!!");
 
       
-      let timeoutId;
+      
 
     function consoleLog(data) {
     const logElement = document.getElementById('log');
